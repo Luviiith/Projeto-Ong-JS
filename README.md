@@ -9,6 +9,7 @@ Site institucional desenvolvido com HTML5 semântico para a ONG Solidária, como
 
 ## 🛠️ Tecnologias
 - HTML5
-- CSS3 
+- CSS3
+- JS
 
 
