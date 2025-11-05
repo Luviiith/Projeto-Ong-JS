@@ -5,7 +5,7 @@ Projeto HTML5 - Site ONG Patinha Solidaria
 ## 📋 Descrição do Projeto
 Site institucional desenvolvido com HTML5 semântico para a ONG Solidária, como parte da atividade de **Fundamentos e Estruturação Web**.
 
-# 🎨 ONG Solidária - Entrega II
+# 🎨 ONG Solidária - Entrega III
 
 ## 🛠️ Tecnologias
 - HTML5
