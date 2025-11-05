@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patinhas Solidárias - ONG de proteção e resgate de animais abandonados">
+    <title>Patinhas Solidárias - Início</title>
+    <link rel="stylesheet" href="css/variaveis.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<script src="js/validacao.js"></script>
+<script src="js/mascara.js"></script>
+<script src="js/formulario.js"></script>
+<script src="js/navegacao.js"></script>
+<script src="js/interatividade.js"></script>
+<script src="js/main.js"></script>
+    <header>
+        <nav>
+            <h1>Patinhas Solidárias</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bem-vindo à Patinhas Solidárias</h2>
+            <img src="imagens/logo.png" alt="Logo da ONG Patinhas Solidárias" width="300">
+            <p>Somos uma organização dedicada ao resgate, tratamento e adoção responsável de animais abandonados.</p>
+        </section>
+
+        <section>
+            <h2>Nossa Missão</h2>
+            <p>Resgatar animais em situação de vulnerabilidade, proporcionar cuidados veterinários e encontrar lares amorosos para cada um deles.</p>
+        </section>
+
+        <section>
+            <h2>Nossa Visão</h2>
+            <p>Um mundo onde todos os animais tenham direito a uma vida digna, com amor, cuidado e respeito.</p>
+        </section>
+
+        <section>
+            <h2>Nossos Valores</h2>
+            <ul class="valores-lista">
+                <li>Compaixão e empatia com todos os seres vivos</li>
+                <li>Transparência em todas as nossas ações</li>
+                <li>Compromisso com o bem-estar animal</li>
+                <li>Respeito à vida em todas as suas formas</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Nossa História</h2>
+            <img src="imagens/equipe.jpg" alt="Equipe de voluntários da Patinhas Solidárias" width="600">
+            <p>Fundada em 2015, a Patinhas Solidárias nasceu do sonho de um grupo de amigos que não suportava ver animais sofrendo nas ruas.</p>
+            <p>Desde então, já resgatamos mais de 500 animais, realizamos centenas de castrações gratuitas e promovemos campanhas de conscientização sobre posse responsável.</p>
+        </section>
+
+        <section>
+            <h2>Conquistas</h2>
+            <div class="conquistas-grid">
+                <article>
+                    <h3>2023</h3>
+                    <ul>
+                        <li>150 animais resgatados</li>
+                        <li>200 castrações realizadas</li>
+                        <li>80 adoções concluídas</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>2022</h3>
+                    <ul>
+                        <li>120 animais resgatados</li>
+                        <li>180 castrações realizadas</li>
+                        <li>65 adoções concluídas</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Nossa Equipe</h2>
+            <div class="equipe-grid">
+                <article>
+                    <h3>Coordenação</h3>
+                    <p>Maria Silva - Fundadora e Presidente</p>
+                    <p>João Santos - Vice-presidente</p>
+                </article>
+                <article>
+                    <h3>Veterinários</h3>
+                    <p>Dra. Ana Paula - Veterinária Responsável</p>
+                    <p>Dr. Carlos Eduardo - Veterinário</p>
+                </article>
+                <article>
+                    <h3>Voluntários</h3>
+                    <p>Contamos com mais de 50 voluntários ativos que dedicam seu tempo e amor aos animais.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <address>
+                <p><strong>Endereço:</strong> Rua das Flores, 123 - Centro - São Paulo/SP</p>
+                <p><strong>CEP:</strong> 01234-567</p>
+                <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                <p><strong>E-mail:</strong> contato@patinhassolidarias.org.br</p>
+                <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 9h às 18h</p>
+            </address>
+            <img src="imagens/sede.jpg" alt="Fachada da sede da ONG" width="600">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Patinhas Solidárias - Todos os direitos reservados</p>
+        <p>CNPJ: 12.345.678/0001-90</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

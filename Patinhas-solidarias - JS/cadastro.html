@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre-se para ser voluntário ou receber novidades da Patinhas Solidárias">
+    <title>Cadastro - Patinhas Solidárias</title>
+    <link rel="stylesheet" href="css/variaveis.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<script src="js/validacao.js"></script>
+<script src="js/mascara.js"></script>
+<script src="js/formulario.js"></script>
+<script src="js/navegacao.js"></script>
+<script src="js/interatividade.js"></script>
+<script src="js/main.js"></script>
+    <header>
+        <nav>
+            <h1>Patinhas Solidárias</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastro de Voluntário</h2>
+            <p>Preencha o formulário abaixo para se cadastrar como voluntário ou para receber nossas novidades.</p>
+        </section>
+
+        <section>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <div>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required minlength="3" maxlength="100">
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+                    </div>
+
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div>
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" id="dataNascimento" name="dataNascimento" required max="2006-12-31">
+                    </div>
+
+                    <div>
+                        <label for="genero">Gênero:</label>
+                        <select id="genero" name="genero" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                            <option value="nao-informar">Prefiro não informar</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+                    
+                    <div>
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000">
+                    </div>
+
+                    <div>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required minlength="5" maxlength="200" placeholder="Rua, número">
+                    </div>
+
+                    <div>
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento" name="complemento" maxlength="100" placeholder="Apartamento, bloco, etc">
+                    </div>
+
+                    <div>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" required maxlength="100">
+                    </div>
+
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required maxlength="100">
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interesse em Voluntariado</legend>
+                    
+                    <div>
+                        <label for="interesse">Como deseja contribuir?</label>
+                        <select id="interesse" name="interesse" required>
+                            <option value="">Selecione</option>
+                            <option value="voluntario">Quero ser voluntário</option>
+                            <option value="doador">Quero fazer doações</option>
+                            <option value="ambos">Ambos</option>
+                            <option value="informacoes">Apenas receber informações</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Áreas de interesse para voluntariado:</p>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="cuidador" name="areas" value="cuidador">
+                                <label for="cuidador">Cuidador de Animais</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="eventos" name="areas" value="eventos">
+                                <label for="eventos">Apoio em Eventos</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="transporte" name="areas" value="transporte">
+                                <label for="transporte">Transporte</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="comunicacao" name="areas" value="comunicacao">
+                                <label for="comunicacao">Comunicação e Marketing</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="administrativo" name="areas" value="administrativo">
+                                <label for="administrativo">Administrativo</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="disponibilidade">Disponibilidade semanal:</label>
+                        <select id="disponibilidade" name="disponibilidade">
+                            <option value="">Selecione</option>
+                            <option value="4-horas">4 horas</option>
+                            <option value="8-horas">8 horas</option>
+                            <option value="12-horas">12 horas</option>
+                            <option value="16-horas">16 horas ou mais</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Dias disponíveis:</p>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="segunda" name="dias" value="segunda">
+                                <label for="segunda">Segunda-feira</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="terca" name="dias" value="terca">
+                                <label for="terca">Terça-feira</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="quarta" name="dias" value="quarta">
+                                <label for="quarta">Quarta-feira</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="quinta" name="dias" value="quinta">
+                                <label for="quinta">Quinta-feira</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sexta" name="dias" value="sexta">
+                                <label for="sexta">Sexta-feira</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sabado" name="dias" value="sabado">
+                                <label for="sabado">Sábado</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="domingo" name="dias" value="domingo">
+                                <label for="domingo">Domingo</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Tem experiência com animais?</label>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="exp-sim" name="experiencia" value="sim" required>
+                                <label for="exp-sim">Sim</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="exp-nao" name="experiencia" value="nao">
+                                <label for="exp-nao">Não</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Conte-nos um pouco sobre você e por que deseja ser voluntário:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" maxlength="500" placeholder="Escreva aqui sua mensagem (máximo 500 caracteres)"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências de Contato</legend>
+                    
+                    <div>
+                        <p>Como prefere ser contatado?</p>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="contato-email" name="preferencia-contato" value="email" required>
+                                <label for="contato-email">E-mail</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="contato-telefone" name="preferencia-contato" value="telefone">
+                                <label for="contato-telefone">Telefone</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="contato-whatsapp" name="preferencia-contato" value="whatsapp">
+                                <label for="contato-whatsapp">WhatsApp</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                        <label for="newsletter">Desejo receber novidades e informações sobre a ONG por e-mail</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Termos e Condições</legend>
+                    
+                    <div>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Li e aceito os termos de uso e política de privacidade</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="veracidade" name="veracidade" required>
+                        <label for="veracidade">Declaro que as informações fornecidas são verdadeiras</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Enviar Cadastro</button>
+                    <button type="reset">Limpar Formulário</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h3>Dúvidas sobre o cadastro?</h3>
+            <p>Entre em contato conosco:</p>
+            <ul class="lista-contato">
+                <li>Telefone: (11) 98765-4321</li>
+                <li>E-mail: voluntariado@patinhassolidarias.org.br</li>
+                <li>WhatsApp: (11) 98765-4321</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Patinhas Solidárias - Todos os direitos reservados</p>
+        <p>CNPJ: 12.345.678/0001-90</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

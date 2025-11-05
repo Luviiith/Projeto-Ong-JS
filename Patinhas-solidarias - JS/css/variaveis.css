@@ -1,0 +1,57 @@
+:root {
+    --cor-primaria: #FF6B35;
+    --cor-primaria-escura: #E55A2B;
+    --cor-primaria-clara: #FF8C5F;
+    
+    --cor-secundaria: #4ECDC4;
+    --cor-secundaria-escura: #3DB3AA;
+    --cor-secundaria-clara: #6FD9D1;
+    
+    --cor-neutra-900: #1A1A1A;
+    --cor-neutra-700: #4A4A4A;
+    --cor-neutra-500: #7A7A7A;
+    --cor-neutra-300: #CCCCCC;
+    --cor-neutra-100: #F5F5F5;
+    --cor-branco: #FFFFFF;
+    
+    --cor-sucesso: #52C41A;
+    --cor-alerta: #FAAD14;
+    --cor-erro: #F5222D;
+    
+    --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-titulos: 'Arial', 'Helvetica', sans-serif;
+    
+    --tamanho-fonte-xs: 0.75rem;
+    --tamanho-fonte-sm: 0.875rem;
+    --tamanho-fonte-base: 1rem;
+    --tamanho-fonte-lg: 1.125rem;
+    --tamanho-fonte-xl: 1.25rem;
+    --tamanho-fonte-2xl: 1.5rem;
+    --tamanho-fonte-3xl: 1.875rem;
+    --tamanho-fonte-4xl: 2.25rem;
+    --tamanho-fonte-5xl: 3rem;
+    
+    --espacamento-xs: 8px;
+    --espacamento-sm: 16px;
+    --espacamento-md: 24px;
+    --espacamento-lg: 32px;
+    --espacamento-xl: 48px;
+    --espacamento-2xl: 64px;
+    
+    --raio-borda-sm: 4px;
+    --raio-borda-md: 8px;
+    --raio-borda-lg: 12px;
+    --raio-borda-xl: 16px;
+    
+    --sombra-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --sombra-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --sombra-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --sombra-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+    
+    --transicao-rapida: 0.2s ease;
+    --transicao-media: 0.3s ease;
+    --transicao-lenta: 0.5s ease;
+    
+    --largura-maxima-container: 1200px;
+    --largura-maxima-conteudo: 800px;
+}
